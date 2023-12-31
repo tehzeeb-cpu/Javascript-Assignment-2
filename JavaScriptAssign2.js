@@ -128,14 +128,15 @@ function generateOTP() {
 const randomOTP = generateOTP();
 console.log(`Generated OTP: ${randomOTP}`);
 // #8
-function daysUntilEvent(){
+function daysUntilEvent() {
     const currentDate = new Date();
-    const parsedeventStartDate = new Date(eventStartDate);
-    const timeDifference = parsedeventStartDate - currentDate;
+    const parsedEventStartDate = new Date(eventStartDate);
+    const timeDifference = parsedEventStartDate - currentDate;
     const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
     return daysDifference;
 }
-const eventStartDate = "2023-12-31";
+const eventStartDate = "2024-01-10";
+console.log(`Days until the event: ${daysUntilEvent()} days`);
 // #9
 function hasUniqueCharacters(username) {
     const uniqueChars = new Set();
